@@ -1,0 +1,71 @@
+header {
+    position: fixed;
+    top: 1.25rem; 
+    left: 0; 
+    right:0; 
+    z-index: 1000;
+    display: flex; 
+    justify-content: center;
+}
+.hero {
+    min-height: 100vh; 
+    width: 100%; 
+    background-image: url('/home-background.png');
+    background-size: cover; 
+    background-position: bottom; 
+    position:relative; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center; 
+    text-align: center; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    position: relative;
+    padding-top: 2rem;
+}
+
+.hero-content {
+    color: black; 
+    margin-bottom: 3rem;
+}
+
+.hero-name{
+    font-size: clamp(3rem, 8vw, 5rem);
+    margin-bottom: 1rem;
+    border-right: 5px solid;
+    border-color: black;
+    width: 15ch;
+    margin: 0 auto;
+    white-space:nowrap;
+    overflow:hidden;
+    animation: 
+        typing 1.9s steps(18),
+        cursor .4s step-end infinite alternate;
+}
+@keyframes cursor{
+    50% {border-color: transparent;}
+}
+@keyframes typing{
+    from{width: 0;}
+}
+
+.hero-est {
+    font-size: 0.9rem; 
+    opacity: 0.9;
+    margin-top: 1rem;
+}
+.hero-welcome-sign{
+    font-size: 1.1 rem; 
+    font-style: italic;
+    margin-top: 1rem;
+}
+
+.hero-scene{
+    position: absolute;
+    bottom: 3rem;
+    display: flex; 
+    align-items: flex-end;
+    justify-content: bottom;
+    gap: clamp(3rem, 10vw, 8rem);
+    padding-top: 15rem;
+}
