@@ -7,6 +7,9 @@
 }
 
 .character-svg {
+  will-change: transform;
+  backface-visibility: hidden;
+  transform: translateZ(0);
   transition: transform 0.6s ease;
   transform-origin: bottom center;
   overflow: visible;
