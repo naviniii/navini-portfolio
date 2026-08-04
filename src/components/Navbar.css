@@ -13,12 +13,11 @@ header {
   align-items: center;
   gap: clamp(1.5rem, 4vw, 3.75rem);
   padding: 0.01rem clamp(0.5rem, 3vw, 2.5rem);
-  background: rgba(255, 255, 255, 0.55);
+  background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-radius: 730px;
-  border: 1px solid rgba(255, 255, 255, 0.4);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(0, 0, 0, 0.2);
   width: fit-content;
   max-width: 90vw;
 }
