@@ -1,0 +1,36 @@
+.flower-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.flower-svg {
+  transform-box: fill-box;
+  transform-origin: bottom center;
+  animation: sway 3.5s ease-in-out infinite; 
+}
+
+@keyframes sway{
+    0%, 100% {transform: rotate(-5deg);}
+    50% {transform: rotate(5deg);}
+}
+
+.flower-link:hover .flower-svg {
+  animation: perk 0.8s ease-in-out infinite alternate; 
+
+}
+
+@keyframes perk{
+    from{transform: scale(1.1) translateY(0) rotate(-2deg);}
+    to {transform: scale(1.18) translateY(-3px) rotate(2deg);}
+}
+
+.flower-label {
+  margin-top: 0.5rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #1a1a1a;
+}
