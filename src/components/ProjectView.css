@@ -1,0 +1,138 @@
+.project-view {
+  position: fixed;
+  top: 15rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 20;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 1.5rem;
+  padding: 2rem;
+  width: 92%;
+  max-width: 50rem;
+  max-height: 60vh;
+  overflow-y: auto;
+  animation: popIn 0.25s ease;
+}
+
+@keyframes popIn {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
+.project-carousel {
+  flex: 0 0 45%;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.project-image-wrap {
+  flex: 1;
+  aspect-ratio: 4 / 3;
+  min-height: 14rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  background: #f4f4f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.carousel-btn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.carousel-btn:hover {
+  color: rgba(0, 0, 0, 0.25);
+}
+
+.project-info {
+  flex: 1;
+  text-align: left;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.project-info h2 {
+  margin: 0.25rem 0;
+  font-size: 1.2rem;
+}
+
+.project-info p {
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+.project-tech {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  color: #888;
+  letter-spacing: 0.05em;
+}
+
+/* phone size */
+@media (max-width: 40rem) {
+  .project-view {
+    top: 13rem;
+    flex-direction: column;
+    padding: 0.85rem;
+    width: 82%;
+    max-width: 18rem;
+    max-height: 50vh;
+    gap: 0.5rem;
+    border-radius: 1rem;
+  }
+
+  .project-carousel {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+
+  .project-image-wrap {
+    min-height: 0;
+    height: 10rem;
+    width: 100%;
+  }
+
+  .carousel-btn {
+    font-size: 1rem;
+  }
+
+  .project-info {
+    text-align: center;
+  }
+
+  .project-info h2 {
+    font-size: 0.9rem;
+    margin: 0.1rem 0;
+  }
+
+  .project-info p {
+    font-size: 0.7rem;
+    line-height: 1.4;
+  }
+
+  .project-tech {
+    font-size: 0.55rem;
+  }
+}
