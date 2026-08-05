@@ -1,0 +1,59 @@
+.projects-hero {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  background-image: url('/home-background.png');
+  background-size: cover;
+  background-position: bottom;
+  padding-top: 8rem;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.projects-title {
+  color: black;
+  font-size: clamp(1.75rem, 5vw, 3rem);
+  margin-bottom: 1rem;
+}
+
+.projects-garden {
+  position: absolute;
+  bottom: clamp(0.75rem, 4vh, 2.5rem);
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-end;
+  justify-content: center;
+  gap: clamp(0.25rem, 2vw, 3rem);
+  width: 95%;
+  max-width: 75rem;
+  z-index: 10;
+}
+
+.project-flower {
+  cursor: pointer;
+  flex-shrink: 1;
+  min-width: 0;
+}
+
+/*phone size*/
+@media (max-width: 40rem) {
+  .projects-garden {
+    justify-content: flex-start;
+    overflow-x: auto;
+    overflow-y: visible;
+    padding: 0 1.5rem 0.5rem;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none; /* Firefox */
+  }
+
+  .projects-garden::-webkit-scrollbar {
+    display: none; /* Chrome/Safari */
+  }
+
+  .project-flower {
+    flex-shrink: 0; /* stop them from squeezing/overlapping */
+  }
+}
