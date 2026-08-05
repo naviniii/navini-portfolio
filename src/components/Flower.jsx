@@ -3,8 +3,9 @@ import './Flower.css';
 
 const VARIANTS = {
   1: { petal: '#f297a0', center: '#f9d0ce' },
-  2: { petal: '#fc7171', center: '#fdabab' },
-  3: { petal: '#f66b77', center: '#f9d0ce' },
+  2: { petal: '#f66b77', center: '#f9d0ce' },
+  3: { petal: '#d78289', center: '#F8CED2' },
+  
 };
 
 function Flower({ to, label, variant = 1 }) {
@@ -13,8 +14,6 @@ function Flower({ to, label, variant = 1 }) {
   return (
     <Link to={to} className="flower-link">
       <svg
-        width="90"
-        height="120"
         viewBox="537 187 256 344"
         className="flower-svg"
       >

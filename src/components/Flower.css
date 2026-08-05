@@ -10,6 +10,9 @@
   transform-box: fill-box;
   transform-origin: bottom center;
   animation: sway 3.5s ease-in-out infinite; 
+  width: clamp(2.8rem, 12vw, 5.6rem);
+  height: auto;
+  overflow: visible;
 }
 
 @keyframes sway{
@@ -33,4 +36,5 @@
   font-size: 0.9rem;
   font-weight: bold;
   color: #1a1a1a;
+  /* white-space: nowrap; */
 }
