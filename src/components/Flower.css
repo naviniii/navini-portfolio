@@ -12,7 +12,9 @@
   animation: sway 3.5s ease-in-out infinite; 
   width: clamp(2.8rem, 12vw, 5.6rem);
   height: auto;
-  overflow: visible;
+  stroke: transparent;
+  stroke-width: 0px;
+  transition: stroke 0.2s ease, stroke-width 0.2s ease;
 }
 
 @keyframes sway{
@@ -20,14 +22,20 @@
     50% {transform: rotate(5deg);}
 }
 
-.flower-link:hover .flower-svg {
-  animation: perk 0.8s ease-in-out infinite alternate; 
+.flower-link:hover .flower-svg{
+   stroke-width: 2px;
+  stroke: rgba(0,0,0,0.2);
+  animation: none;
+}
 
+.project-flower.active .flower-svg{
+  stroke-width: 2px;
+  stroke: rgba(0,0,0,0.5);
 }
 
 @keyframes perk{
-    from{transform: scale(1.1) translateY(0) rotate(-2deg);}
-    to {transform: scale(1.18) translateY(-3px) rotate(2deg);}
+    0%, 100% {transform: scale(1.1);}
+    50%{transform: scale(1.3);}
 }
 
 .flower-label {
