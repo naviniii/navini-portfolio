@@ -38,22 +38,28 @@
   min-width: 0;
 }
 
+.projects-caption {
+    font-style: normal;
+}
+
+
 /*phone size*/
 @media (max-width: 40rem) {
   .projects-garden {
     justify-content: flex-start;
     overflow-x: auto;
     overflow-y: visible;
-    padding: 0 1.5rem 0.5rem;
+    padding: 1rem 1.5rem 0.5rem;
+    min-height: 8rem;
     -webkit-overflow-scrolling: touch;
-    scrollbar-width: none; /* Firefox */
+    scrollbar-width: none;
   }
 
   .projects-garden::-webkit-scrollbar {
-    display: none; /* Chrome/Safari */
+    display: none;
   }
 
   .project-flower {
-    flex-shrink: 0; /* stop them from squeezing/overlapping */
+    flex-shrink: 0;
   }
 }

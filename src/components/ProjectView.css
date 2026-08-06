@@ -8,14 +8,14 @@
   flex-direction: row;
   align-items: center;
   gap: 2rem;
-  background: white;
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  background: #F0F9FA;
   border-radius: 1.5rem;
   padding: 2rem;
   width: 92%;
-  max-width: 50rem;
-  max-height: 60vh;
+  max-width: 54rem;
+  max-height: 65vh;
   overflow-y: auto;
+  border: 1px solid rgba(0, 0, 0, 0.2);
   animation: popIn 0.25s ease;
 }
 
@@ -30,6 +30,27 @@
   }
 }
 
+.close-btn {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #666;
+  padding: 0;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.close-btn:hover {
+  color: #000;
+}
+
 .project-carousel {
   flex: 0 0 45%;
   display: flex;
@@ -40,10 +61,10 @@
 .project-image-wrap {
   flex: 1;
   aspect-ratio: 4 / 3;
-  min-height: 14rem;
+  min-height: 16rem;
   border-radius: 1rem;
   overflow: hidden;
-  background: #f4f4f4;
+  background: #F0F9FA;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -76,31 +97,65 @@
 .project-info h2 {
   margin: 0.25rem 0;
   font-size: 1.2rem;
+  padding-bottom: 0.8rem;
+  padding-top: 0.8rem;
 }
 
 .project-info p {
   font-size: 0.85rem;
   line-height: 1.5;
+  padding-bottom: 0.8rem;
+  padding-top: 0.8rem;
 }
 
-.project-tech {
-  font-size: 0.7rem;
-  text-transform: uppercase;
-  color: #888;
-  letter-spacing: 0.05em;
+.tech-tags{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem; 
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.8rem;
+  padding-top: 0.8rem;
+}
+.tech-tag{
+    background: #CEECF0;
+    color: #333;
+    font-size: 0.65rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.03rem;
+    padding: 0.25rem 0.7rem;
+    border-radius: 999px;
+    border: 0.5px solid #115361;
 }
 
-/* phone size */
+.carousel-btn:disabled {
+  opacity: 0.25;
+  cursor: default;
+}
+
+.carousel-btn:disabled:hover {
+  color: inherit;
+}
+
+
+
+
 @media (max-width: 40rem) {
   .project-view {
-    top: 13rem;
+    top: 14rem;
     flex-direction: column;
-    padding: 0.85rem;
-    width: 82%;
-    max-width: 18rem;
-    max-height: 50vh;
-    gap: 0.5rem;
+    padding: 1.5rem 1rem 1rem;
+    width: 100%;
+    max-width: 22rem;
+    max-height: 55vh;
+    gap: 0.75rem;
     border-radius: 1rem;
+  }
+
+  .close-btn {
+    top: 0.5rem;
+    right: 0.5rem;
+    font-size: 1.25rem;
   }
 
   .project-carousel {
@@ -110,7 +165,7 @@
 
   .project-image-wrap {
     min-height: 0;
-    height: 10rem;
+    height: 8rem;
     width: 100%;
   }
 
@@ -123,16 +178,22 @@
   }
 
   .project-info h2 {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     margin: 0.1rem 0;
+    padding-bottom: 0.3rem;
+  padding-top: 0.3rem;
   }
 
   .project-info p {
-    font-size: 0.7rem;
+    font-size: 0.72rem;
     line-height: 1.4;
+    padding-bottom: 0.1rem;
+  padding-top: 0.1rem;
   }
 
   .project-tech {
     font-size: 0.55rem;
+    padding-bottom: 0.1rem;
+  padding-top: 0.1rem;
   }
 }
