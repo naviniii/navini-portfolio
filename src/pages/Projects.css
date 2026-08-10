@@ -45,6 +45,9 @@
 
 /*phone size*/
 @media (max-width: 40rem) {
+  .projects-hero{
+     background-image: url('/home-vert.png');
+  }
   .projects-garden {
     justify-content: flex-start;
     overflow-x: auto;
