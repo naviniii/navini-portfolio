@@ -79,7 +79,7 @@ function Contact(){
                                 )}
                             </div>
                         ))}
-                        <button type = "submit" className = "send-btn"> send ♡ </button>
+                        <button type = "submit" className = "send-btn"> send message </button>
                         </>
                     )}
                 </form>
@@ -96,7 +96,7 @@ function Contact(){
             <i className="fa-brands fa-linkedin"></i>
             <div>
               <span className="link-label">Linkedin</span>
-              <span className="link-sub">connect with me :)</span>
+              <span className="link-sub">https://www.linkedin.com/in/navini-ariyasinghe-173349223/</span>
             </div>
           </a>
 
