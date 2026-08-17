@@ -21,10 +21,10 @@ function Projects(){
             <p className = "projects-caption"> Click on the flowers to learn about what I've been up to!</p>
             <div className="projects-garden">
                 {projects.map((project,i) => (
-                    <div key={project.id} className={`project-flower ${selectedProject?.id === project.id ? 'active' : ''}`} 
+                    <button type = "button"  key={project.id} className={`project-flower ${selectedProject?.id === project.id ? 'active' : ''}`} 
                     onClick={() => handleFlowerClick(project)}>
                         <Flower to="#" label={project.name} variant={(i % 3) + 1} />
-                    </div>
+                    </button>
                 ))}
             </div>
 

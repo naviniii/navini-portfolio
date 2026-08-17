@@ -19,17 +19,17 @@ function ProjectView({project, onClose}){
     return (
 
         <div className="project-view">
-            <button className="close-btn" onClick={onClose}>✕</button>
+            <button type = "button"  className="close-btn" onClick={onClose}>✕</button>
             
             <div className="project-carousel"> 
-                <button className="carousel-btn prev" onClick={prevSlide} disabled = {!hasMultipleImages}>&#10094;</button>
+                <button type = "button"  className="carousel-btn prev" onClick={prevSlide} disabled = {!hasMultipleImages}>&#10094;</button>
                 <div className="project-image-wrap">
                     <img src={project.images[activeIndex]}
                     alt={project.name}
                     className="project-image"
                     />
                 </div>
-                <button className="carousel-btn next" onClick={nextSlide} disabled = {!hasMultipleImages}>&#10095;</button>
+                <button type = "button"  className="carousel-btn next" onClick={nextSlide} disabled = {!hasMultipleImages}>&#10095;</button>
                 
             </div>
 

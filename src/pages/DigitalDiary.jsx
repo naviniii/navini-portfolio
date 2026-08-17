@@ -13,9 +13,9 @@ function DigitalDiary() {
             <h1 className = "diary-title"> Digital Diary </h1>
         </div>
       <div className="diary-scene">
-        <div className="diary-icon-wrap" onClick={() => setIsOpen(!isOpen)}>
+        <button type = "button"  className="diary-icon-wrap" onClick={() => setIsOpen(!isOpen)}>
           <Diary to="#" label="" />
-        </div>
+        </button>
       </div>
 
       {isOpen && <DiaryView entries={diaryEntries} onClose={() => setIsOpen(false)} />}

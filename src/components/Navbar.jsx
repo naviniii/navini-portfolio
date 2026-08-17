@@ -23,6 +23,7 @@ function Navbar() {
         </div>
 
         <button
+        type = "button" 
           className="hamburger"
           onClick={() => setIsOpen(!isOpen)}
           aria-label="Toggle menu"

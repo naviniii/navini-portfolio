@@ -21,7 +21,7 @@ function DiaryView({ entries, onClose }) {
 
   return (
     <div className="diary-book">
-      <button className="diary-close" onClick={onClose}>✕</button>
+      <button type = "button" className="diary-close" onClick={onClose}>✕</button>
 
       <div className="diary-page">
         <div className="diary-page-left">
@@ -40,9 +40,9 @@ function DiaryView({ entries, onClose }) {
       </div>
 
       <div className="diary-nav">
-        <button className="diary-nav-btn" onClick={prevPage} disabled={!hasMultiple}>❮ prev</button>
+        <button type = "button" className="diary-nav-btn" onClick={prevPage} disabled={!hasMultiple}>❮ prev</button>
         <span className="diary-page-count">{pageIndex + 1} / {entries.length}</span>
-        <button className="diary-nav-btn" onClick={nextPage} disabled={!hasMultiple}>next ❯</button>
+        <button type = "button" className="diary-nav-btn" onClick={nextPage} disabled={!hasMultiple}>next ❯</button>
       </div>
     </div>
   );
