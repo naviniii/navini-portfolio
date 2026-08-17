@@ -1,7 +1,7 @@
 .contact-hero {
   min-height: 100vh;
   width: 100%;
-  background-image: url('/other-background.png');
+  background-image: url('/home-background.png');
   background-size: cover;
   background-position: center;
   padding-top: 6.5rem;
@@ -135,7 +135,6 @@
   font-size: 1.4rem;
   width: 1.75rem;
   text-align: center;
-  /* color: #115361; */
   color: #B97278;
 }
 

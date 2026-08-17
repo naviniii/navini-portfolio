@@ -13,7 +13,6 @@ header {
     background-image: url('/home-background.png');
     background-size: cover; 
     background-position: bottom; 
-    position:relative; 
     display: flex; 
     flex-direction: column; 
     align-items: center;
@@ -35,7 +34,6 @@ header {
     border-right: 5px solid;
     border-color: black;
     width: 15ch;
-    margin: 0 auto;
     white-space:nowrap;
     overflow:hidden;
     animation: 
@@ -75,4 +73,14 @@ header {
   .hero{
     background-image: url('/home-vert.png');
   }
+  .hero-name {
+    white-space: normal;
+    width: auto;
+    max-width: 85vw;
+    border-right: none;
+    animation: none;
+    overflow: visible;
+    margin: 0 auto 1rem;
+  }
+
 }

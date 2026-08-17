@@ -83,7 +83,17 @@
 
 @media (max-width: 40rem) {
   .about-hero {
+    height: auto;
+    min-height: 100vh;
+    overflow-y: visible;
+    padding-top: 9rem; /* pushes content clear of the fixed navbar */
+    padding-bottom: 3rem;
     background-image: url('/other-vert.png');
+  }
+
+  .about-sign {
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
   }
 
   .about-main {
@@ -92,7 +102,17 @@
 
   .about-info {
     max-width: 22rem;
-    padding: 2rem 2rem;
+    padding: 1.5rem 1.5rem;
   }
 
+  .about-info h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .about-info p {
+    font-size: 0.85rem;
+    line-height: 1.5;
+    margin-bottom: 0.75rem;
+  }
 }
