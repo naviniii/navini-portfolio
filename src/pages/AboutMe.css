@@ -3,7 +3,7 @@
   height: 100vh;
   overflow-y: auto;
   width: 100%;
-  background-image: url('/home-background.png');
+  background-image: url('/home-background.webp');
   background-size: cover;
   background-position: bottom;
   padding-top: 6.5rem;

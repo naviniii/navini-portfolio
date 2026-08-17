@@ -1,7 +1,7 @@
 .diary-hero {
   min-height: 100vh;
   width: 100%;
-  background-image: url('/digital_diary.png');
+  background-image: url('/digital_diary.webp');
   background-size: cover;
   background-position: bottom;
   display: flex;
@@ -45,7 +45,7 @@
 
 @media (max-width: 40rem) {
   .diary-hero {
-    background-image: url('/digital_diary_vert.png');
+    background-image: url('/digital_diary_vert.webp');
   }
   .diary-icon-wrap svg {
     width: clamp(6rem, 40vw, 9rem);

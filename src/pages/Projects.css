@@ -3,7 +3,7 @@
   min-height: 100vh;
   width: 100%;
   overflow: hidden;
-  background-image: url('/home-background.png');
+  background-image: url('/home-background.webp');
   background-size: cover;
   background-position: bottom;
   padding-top: 8rem;
@@ -49,7 +49,7 @@
 /*phone size*/
 @media (max-width: 40rem) {
   .projects-hero{
-     background-image: url('/home-vert.png');
+     background-image: url('/home-vert.webp');
   }
   .projects-garden {
     justify-content: flex-start;
