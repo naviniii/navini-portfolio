@@ -5,8 +5,6 @@ function Character({ to, label }) {
   return (
     <Link to={to} className="character-link">
       <svg
-        width="130"
-        height="239"
         viewBox="0 0 249 458"
         className="character-svg"
         fill="none"
