@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import AboutMe from './pages/AboutMe';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
+import DigitalDiary from './pages/DigitalDiary';
 
 function App(){
   return (
@@ -14,6 +15,7 @@ function App(){
         <Route path = "/projects" element = {<Projects />} />
         <Route path = "/about" element = {<AboutMe />} />
         <Route path = "/contact" element = {<Contact />} />
+        <Route path = "/diary" element = {<DigitalDiary />} />
       </Routes>
     </BrowserRouter>
   );
