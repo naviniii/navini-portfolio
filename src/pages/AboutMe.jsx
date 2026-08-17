@@ -1,4 +1,3 @@
-import Character from '../components/Character';
 import './AboutMe.css';
 
 
@@ -16,11 +15,15 @@ function AboutMe(){
                         </p>
                         <p> Outside of Software Engineering, I am a member of the Orbital Operations team, at the Auckland Programme of Space Systems (APSS). I am an avid reader (I really enjoy fantasy and mystery), and I really enjoy exploring new places</p>
                         <p> I am always available to say hello! </p>
-                    {/*temp photo place */}
+            <div className="about-icons-wrapper">
+            <a href="mailto:email@gmail.com" className="about-icons" aria-label="Email">
+              <i className="fa-solid fa-envelope"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/navini-ariyasinghe-173349223/" className="about-icons" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <i className="fa-brands fa-linkedin"></i>
+            </a>
+          </div>
             </div>
-                <div className = "character">
-                    <Character to = "#" label = ""/>
-                </div>
             </div>
         </section>
         )

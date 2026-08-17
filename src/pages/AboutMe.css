@@ -1,75 +1,98 @@
 .about-hero {
-    min-height: 100vh; 
-    width: 100%; 
-    background-image: url('/other-background.png');
-    background-size: cover; 
-    background-position: center; 
-    padding-top: 6.5rem; 
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-
+  position: relative;
+  height: 100vh;
+  overflow-y: auto;
+  width: 100%;
+  background-image: url('/home-background.png');
+  background-size: cover;
+  background-position: bottom;
+  padding-top: 6.5rem;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.about-sign{
-    padding: 0.75rem 2rem; 
-    border-radius: 0.5rem;
-    font-weight: bold;
-    font-size: clamp(1.5rem, 4vw, 2.25rem);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 2.5rem;
+.about-sign {
+  padding: 0.75rem 2rem;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  font-size: clamp(1.5rem, 4vw, 2.25rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2.5rem;
 }
 
-.about-main{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 3rem;
-    padding: 0 2rem 4rem; 
-    flex-wrap: wrap;
-
+.about-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  padding: 0 2rem 4rem;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 75rem;
+  margin: 0 auto;
 }
 
-.about-info{
-    background: #fff; /*TEMP TEMP TEMP TEMP*/
-    border-radius: 1.5rem;
-    padding: 2rem 2.5rem; 
-    width: 100%;
-    max-width: 28rem; 
-    text-align: left;
-    border: 2px solid rgba(0,0,0,0.2);
+.about-info {
+  background: #fff;
+  border-radius: 1.5rem;
+  padding: 2.75rem 3.5rem;
+  width: 100%;
+  max-width: 40rem;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  text-align: justify;
 }
 
-.about-info h3{
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-}
-.about-info p{
-    font-size: 0.95rem;
-    line-height: 1.5;
-    color: #333;
-    margin-bottom: 0.9rem;
+.about-info h3 {
+  font-size: 1.75rem;
+  margin-bottom: 1.25rem;
+  text-align: center;
 }
 
-.about-info p:last-child{
-    margin-bottom: 0;
+.about-info p {
+  font-size: 1.05rem;
+  line-height: 1.65;
+  color: #333;
+  margin-bottom: 1rem;
 }
 
-.character{
-    width: clamp(9rem, 18vw, 14rem);
-    height: auto;
+.about-info p:last-of-type {
+  margin-bottom: 0;
+}
+
+.about-icons-wrapper {
+  display: flex;
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+  justify-content: center;
+}
+
+.about-icons {
+  color: #333;
+  font-size: 1.5rem;
+  transition: opacity 0.2s;
+}
+
+.about-icons:hover {
+  opacity: 0.5;
 }
 
 @media (max-width: 40rem) {
-  .about-main {
-    flex-direction: column-reverse;
-  }
-  .about-hero{
+  .about-hero {
     background-image: url('/other-vert.png');
+  }
+
+  .about-main {
+    justify-content: center;
   }
 
   .about-info {
     max-width: 22rem;
+    padding: 2rem 2rem;
   }
+
 }
